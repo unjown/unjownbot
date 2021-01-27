@@ -23,7 +23,8 @@ const commands = new Discord.MessageEmbed()
   {name: 'easteregg', value:'list all eastereggs'},
   {name: 'roles', value: 'list all available staff applications'},
   {name: 'donate', value: 'pls donate pls'},
-  {name: 'register', value: 'Teaches how to register'},  
+  {name: 'register', value: 'Teaches how to register'},
+  {name: 'lol gh', value:'shows github link to repo'},  
 )
 const Vstaff = new Discord.MessageEmbed()
   .setTitle('Roles')
@@ -87,5 +88,10 @@ if (message.content.startsWith('lol help')) {
           
       if(message.content.startsWith('lol noice')){
           message.channel.send('noice')
-      }else return;
+      }else
+      
+      if(message.content.startsWith('lol gh')){
+          message.channel.send('https://github.com/unjown/unjownbot')
+      }
+        return;
     };

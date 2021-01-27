@@ -11,7 +11,6 @@ const client = new Discord.Client();
 client.once('ready', () => {
   console.log('🤖 Beep beep! I am ready!');
 });
-if (message.author.bot) return;
 
 client.on('message', commandHandler);
 client.on('message', roles);

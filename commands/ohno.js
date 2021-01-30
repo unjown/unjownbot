@@ -4,4 +4,6 @@ module.exports = async (msg) => {
     const ohno = msg.guild.emojis.cache.find(x => x.name === "ohno")
     if (msg.content.toLowerCase().includes("oh no")) {
             msg.react(ohno);
+}return
+    
 };

@@ -17,5 +17,6 @@ client.on('message', roles);
 client.on('message', react);
 client.on('message', ping);
 client.on('message', egg);
+client.on('message', ohno);
 
 client.login(config.token);

@@ -16,12 +16,8 @@ module.exports = async (message) => {
         
     if(message.content.startsWith('oh yes')){
         message.react('<:ohyes:788779214140080138>')
-    }else
-        
-        if(message.content.startsWith('oh no')){
-        message.react('<:ohno:786866841539575808>')
-    }else
-        
+    }else{
+   
         if(message.content.startsWith('Ax')){
         message.react('<:Ax:789661633214676992>')
     }else

@@ -1,4 +1,5 @@
 const Discord = require('discord.js');  
+const prefix = "lol"
 const ruleEmbed = new Discord.MessageEmbed()
       .setTitle('RULES')  
       .addFields(
@@ -51,46 +52,42 @@ const donate = new Discord.MessageEmbed()
     
 module.exports = async (message) => {
     if (message.author.bot) return;
-if (message.content.startsWith('lol help')) {
+if (message.content.startsWith(prefix + " help")) {
         message.channel.send('*Unjownbot is offline* \n lol commands maybe?');
       } else
     
-      if (message.content.startsWith('lol rules')){
+      if (message.content.startsWith(prefix + ' rules')){
         message.channel.send(ruleEmbed);
       }else
-      if (message.content.startsWith('lol staff')){
+      if (message.content.startsWith(prefix +  ' staff')){
         message.channel.send('https://forms.gle/5oapFULkcb1g7Muw5')
       }else
 
-      if (message.content.startsWith('lol commands')){
+      if (message.content.startsWith(prefix + ' commands')){
         message.channel.send(commands)
       }else
     
-      if (message.content.startsWith('lol eastereggs')){
+      if (message.content.startsWith(prefix + ' eastereggs')){
         message.channel.send('lol nice try')
       }else
-    
-      if (message.content.startsWith('lol ping')){
-        message.channel.send(`🏓Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`)
-      }else
       
-      if (message.content.startsWith('lol roles')){
+      if (message.content.startsWith(prefix + ' roles')){
         message.channel.send(Vstaff)
       }else
           
-      if(message.content.startsWith('lol donate')){
+      if(message.content.startsWith(prefix + ' donate')){
           message.channel.send(donate)
       }else
           
-      if(message.content.startsWith('lol register')){
+      if(message.content.startsWith(prefix + ' register')){
           message.channel.send(register)
       }else
           
-      if(message.content.startsWith('lol noice')){
+      if(message.content.startsWith(prefix + ' noice')){
           message.channel.send('noice')
       }else
       
-      if(message.content.startsWith('lol gh')){
+      if(message.content.startsWith(prefix + ' gh')){
           message.channel.send('https://github.com/unjown/unjownbot')
       }
         return;

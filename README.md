@@ -8,3 +8,5 @@ this bot is made for [Alex mindstry](https://discord.gg/KkPp9242VT)
 ## TO DO/fater merging of PR
 
 - [ ] Invite tracker
+- [ ] better configs 
+- [ ] ping.js first user ping not working

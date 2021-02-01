@@ -6,7 +6,9 @@ const roles = require('./commands/roles.js')
 const react = require('./commands/reactions.js')
 const ping = require('./commands/ping.js')
 const egg = require('./commands/egg.js')
+const pog = require('./commands/pog.js')
 const ohno = require('./commands/ohno.js')
+
 const client = new Discord.Client();
 
 client.once('ready', () => {
@@ -19,5 +21,6 @@ client.on('message', react);
 client.on('message', ping);
 client.on('message', egg);
 client.on('message', ohno);
+client.on('message', pog);
 
 client.login(config.token);

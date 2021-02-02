@@ -25,16 +25,16 @@ const commands = new Discord.MessageEmbed()
   {name: 'roles', value: 'list all available staff applications'},
   {name: 'donate', value: 'pls donate pls'},
   {name: 'register', value: 'Teaches how to register'},
-  {name: 'lol gh', value:'shows github link to repo'},  
+  {name: 'gh', value:'shows github link to repo'},  
 )
 const Vstaff = new Discord.MessageEmbed()
   .setTitle('Roles')
   .addFields(
-    {name: 'Admin' ,value: 'do "lol admin" to view more info'},
-    {name: 'Mod/moderator', value: 'do "lol mod" to view more info'},
-    {name: 'Developer', value: 'do "lol dev" to view more info'},
-    {name: 'Designer',value: 'do "lol des" to view more info'},
-    {name: 'Video editors',value: 'do "lol Vid" to view more info'},
+    {name: 'Admin' ,value: 'type "lol admin" to view more info'},
+    {name: 'Mod/moderator', value: 'type "lol mod" to view more info'},
+    {name: 'Developer', value: 'type "lol dev" to view more info'},
+    {name: 'Designer',value: 'type "lol des" to view more info'},
+    {name: 'Video editors',value: 'type "lol vid" to view more info'},
   )
 const register = new Discord.MessageEmbed()
 	.setTitle('HOW TO REGISTER')

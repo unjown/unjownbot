@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 
 module.exports = async (message) => {
-    if (message.author.bot) return;
     if(message.content.includes('lol')){
         message.react('786876427311251466')
     }else

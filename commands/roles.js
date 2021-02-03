@@ -5,7 +5,7 @@ const admin = new Discord.MessageEmbed()
 .setColor('#0099ff')
 .setTitle('ADMIN')
 .addFields(
-  {name: '**Responsibility:**  Moderate Discord/Mindusrty'
+  {name: '**Responsibility:**' , value: 'Moderate Discord/Mindusrty'
   }
 ) 
 
@@ -13,7 +13,7 @@ const mod = new Discord.MessageEmbed()
 .setColor('#0099ff')
 .setTitle('MODERATOR')
 .addFields(
-  {name: '**RESPONSIBILITY: Moderate Discord/Mindsutry**'
+  {name: '**RESPONSIBILITY:**', value: 'Moderate Discord/Mindsutry'
   }
 ) 
 

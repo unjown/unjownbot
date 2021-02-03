@@ -1,9 +1,9 @@
 const Discord = require('discord.js');  
-module.exports = async (message) => {
+module.exports = async (message, client) => {
     if (message.author.bot) return;
 
     // hewp me its bugged line 6-7 
-	if (message.content.includes('<@739697580216418324>')) {
+	if (message.mentions.has(client.user)) {
 	message.channel.send('make sure this important or else.... lol')
     }else
         

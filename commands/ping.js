@@ -4,7 +4,7 @@ module.exports = async (message) => {
     if (message.author.bot) return;
 
     // hewp me its bugged line 6-7 
-	if (message.mentions.has(client.user)) {
+	if (message.mentions.has(client.users.cache.get(739697580216418324)) {
 	message.channel.send('make sure this important or else.... lol')
     }else
         

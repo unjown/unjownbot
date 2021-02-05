@@ -40,11 +40,11 @@ const register = new Discord.MessageEmbed()
 	.setTitle('HOW TO REGISTER')
 	.addFields(
     {name: 'STEP 1', value: 'type /register in game and the your pin'},
-    {name: 'STEP 2', value: 'type a?register XXXX(your pin) in <#791886317491191818>'},    
+    {name: 'STEP 2', value: 'type a?register XXXX(your pin) in <#791886317491191818>'}, 
     )
 const donate = new Discord.MessageEmbed()
 	.setTitle('DONATE')
-	.setDescription('https://www.paypal.me/alexserver')
+	.setDescription('donate on [Paypal](https://www.paypal.me/alexserver)')
 	.addFields(
     {name: 'Q:', value: 'Where will the donations go?'},
 	{name: 'A:', value: 'donations will go to the monthly expenses running the servers'},

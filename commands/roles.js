@@ -17,29 +17,15 @@ const mod = new Discord.MessageEmbed()
   }
 ) 
 
-const javadev = new Discord.MessageEmbed()
+const dev = new Discord.MessageEmbed()
 .setColor('#0099ff')
-.setTitle('Java dev')
+.setTitle('Developer Roles')
 .addFields(
-  {name: '**Responsibility:**', value:'help improve/make plugins '
-  }
-) 
+  {name: 'Java', value:'**Responsibility:** help improve/create plugins'},
+  {name: 'Python', value:'**Responsibility:** help improve watermelonbot by Alex'},
+  {name: 'Javascript', value:'**Responsibility:** help improve unjownbot by Unjown'}
+  ) 
 
-const pyadev = new Discord.MessageEmbed()
-.setColor('#0099ff')
-.setTitle('py dev')
-.addFields(
-  {name: '**Responsibility:**' , value:'help improve watermelonbot '
-  }
-) 
-
-const jsdev = new Discord.MessageEmbed()
-.setColor('#0099ff')
-.setTitle('js dev')
-.addFields(
-  {name: '**Responsibility:**' , value: 'help improve me '
-  }
-) 
 
 const des = new Discord.MessageEmbed()
 .setColor('#0099ff')
@@ -68,9 +54,7 @@ module.exports = async (message) => {
       }else
     
       if(message.content.startsWith(prefix + ' dev')){
-        message.channel.send(javadev)
-        message.channel.send(pyadev)
-        message.channel.send(jsdev)
+        message.channel.send(dev)
       }else
     
       if(message.content.startsWith(prefix + ' des')){

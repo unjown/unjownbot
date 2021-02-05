@@ -8,6 +8,7 @@ const ping = require('./commands/ping.js')
 const egg = require('./commands/egg.js')
 const pog = require('./commands/pog.js')
 const ohno = require('./commands/ohno.js')
+const music = require('./commands/music.js')
 
 const client = new Discord.Client();
 
@@ -15,6 +16,7 @@ client.once('ready', () => {
   console.log('🤖 Beep beep! I am ready!');
 });
 
+client.on('message', music);
 client.on('message', commandHandler);
 client.on('message', roles);
 client.on('message', react);

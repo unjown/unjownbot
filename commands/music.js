@@ -3,7 +3,7 @@ const fs = require('fs')
 module.exports = async (message) => {
   if (!message.guild) return;
 
-if (message.content.startsWith('lol join')) {
+if (message.content.startsWith('lol play AG')) {
 
 var VC = message.member.voice.channel;
 

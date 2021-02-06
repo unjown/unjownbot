@@ -36,12 +36,7 @@ const Vstaff = new Discord.MessageEmbed()
     {name: 'Designer',value: 'type "lol des" to view more info'},
     {name: 'Video editors',value: 'type "lol vid" to view more info'},
   )
-const register = new Discord.MessageEmbed()
-	.setTitle('HOW TO REGISTER')
-	.addFields(
-    {name: 'STEP 1', value: 'type /register in game and the your pin'},
-    {name: 'STEP 2', value: 'type a?register XXXX(your pin) in <#791886317491191818>'}, 
-    )
+
 const donate = new Discord.MessageEmbed()
 	.setTitle('DONATE')
 	.setDescription('donate on [Paypal](https://www.paypal.me/alexserver)')
@@ -75,20 +70,11 @@ if (message.content.startsWith(prefix + " help")) {
         message.channel.send(Vstaff)
       }else
           
-      if(message.content.startsWith(prefix + ' donate')){
+      if (message.content.startsWith(prefix + ' donate')){
           message.channel.send(donate)
       }else
-          
-      if(message.content.startsWith(prefix + ' register')){
-          message.channel.send(register)
-      }else
-          
-      if(message.content.startsWith(prefix + ' noice')){
-          message.channel.send('noice')
-      }else
       
-      if(message.content.startsWith(prefix + ' gh')){
+      if (message.content.startsWith(prefix + ' gh')){
           message.channel.send('https://github.com/unjown/unjownbot')
-      }
-        return;
+      }else return;
     };

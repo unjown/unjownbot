@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const config = require('./config.json')
 
+const FAQ = require('./commands/FAQ.js')
 const commandHandler = require('./commands/basics.js');
 const roles = require('./commands/roles.js')
 const react = require('./commands/reactions.js')
@@ -18,6 +19,7 @@ client.once('ready', () => {
 
 client.on('message', music);
 client.on('message', commandHandler);
+client.on('message', FAQ);
 client.on('message', roles);
 client.on('message', react);
 client.on('message', ping);

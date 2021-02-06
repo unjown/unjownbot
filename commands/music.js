@@ -23,7 +23,7 @@ const dispatcher = connection.play('/home/container/commands/music/AG.mp3');// m
 
 .catch(console.error);
 
-}else if(message.content.startsWith('lol play unj')){
+}else if(message.content.startsWith('lol play unj')){ // lol play unj not working
   var VC = message.member.voice.channel;
 
   if (!VC)

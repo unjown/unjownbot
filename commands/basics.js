@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const prefix = "lol"
 const ruleEmbed = new Discord.MessageEmbed()
       .setTitle('RULES')  
+      .setColor('#ffB35c')
       .addFields(
         {name: '1.', value: ' You are not allowed to grief, will result in a ban/kick. If you are modifying/rebuilding something let your teammates know. \n'},
         {name: '2.', value: ' NSFW is banned. Posting any nsfw content will result in an instant mute or in more extreme cases ban. \n'},
@@ -16,6 +17,7 @@ const ruleEmbed = new Discord.MessageEmbed()
       )
 const commands = new Discord.MessageEmbed()
 .setTitle('COMMANDS')
+.setColor('#ffB35c')
 .addFields(
   {name:'help', value: 'available shows commands'},
   {name:'commands', value: 'the true help'},
@@ -29,6 +31,7 @@ const commands = new Discord.MessageEmbed()
 )
 const Vstaff = new Discord.MessageEmbed()
   .setTitle('Roles')
+  .setColor('#ffB35c')
   .addFields(
     {name: 'Admin' ,value: 'type "lol admin" to view more info'},
     {name: 'Mod/moderator', value: 'type "lol mod" to view more info'},
@@ -38,7 +41,8 @@ const Vstaff = new Discord.MessageEmbed()
   )
 
 const donate = new Discord.MessageEmbed()
-	.setTitle('DONATE')
+  .setTitle('DONATE')
+  .setColor('#ffB35c')
 	.setDescription('donate on [Paypal](https://www.paypal.me/alexserver)')
 	.addFields(
     {name: 'Q:', value: 'Where will the donations go?'},

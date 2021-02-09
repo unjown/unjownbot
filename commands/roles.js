@@ -3,6 +3,7 @@ const prefix = "lol"
 
 const admin = new Discord.MessageEmbed()
 .setColor('#0099ff')
+.setColor('#ffB35c')
 .setTitle('ADMIN')
 .addFields(
   {name: '**Responsibility:**' , value: 'Moderate Discord/Mindusrty'
@@ -11,6 +12,7 @@ const admin = new Discord.MessageEmbed()
 
 const mod = new Discord.MessageEmbed()
 .setColor('#0099ff')
+.setColor('#ffB35c')
 .setTitle('MODERATOR')
 .addFields(
   {name: '**RESPONSIBILITY:**', value: 'Moderate Discord/Mindsutry'
@@ -19,6 +21,7 @@ const mod = new Discord.MessageEmbed()
 
 const dev = new Discord.MessageEmbed()
 .setColor('#0099ff')
+.setColor('#ffB35c')
 .setTitle('Developer Roles')
 .addFields(
   {name: 'Java', value:'**Responsibility:** help improve/create plugins'},
@@ -28,7 +31,7 @@ const dev = new Discord.MessageEmbed()
 
 
 const des = new Discord.MessageEmbed()
-.setColor('#0099ff')
+.setColor('#ffB35c')
 .setTitle('DESIGNER')
 .addFields(
   {name: '**Responsibility:**', value: 'make banner, design stuff'
@@ -36,7 +39,7 @@ const des = new Discord.MessageEmbed()
 ) 
 
 const vid = new Discord.MessageEmbed()
-.setColor('#0099ff')
+.setColor('#ffB35c')
 .setTitle('Video editor')
 .addFields( 
   {name: '**Responsibility:**', value: 'help edit videos'

@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const prefix = "lol"
 const ruleEmbed = new Discord.MessageEmbed()
       .setTitle('RULES')  
+      .setColor('#ffB35c')
       .addFields(
         {name: '1.', value: ' You are not allowed to grief, will result in a ban/kick. If you are modifying/rebuilding something let your teammates know. \n'},
         {name: '2.', value: ' NSFW is banned. Posting any nsfw content will result in an instant mute or in more extreme cases ban. \n'},
@@ -16,6 +17,7 @@ const ruleEmbed = new Discord.MessageEmbed()
       )
 const commands = new Discord.MessageEmbed()
 .setTitle('COMMANDS')
+.setColor('#ffB35c')
 .addFields(
   {name:'help', value: 'available shows commands'},
   {name:'commands', value: 'the true help'},
@@ -25,26 +27,23 @@ const commands = new Discord.MessageEmbed()
   {name: 'roles', value: 'list all available staff applications'},
   {name: 'donate', value: 'pls donate pls'},
   {name: 'register', value: 'Teaches how to register'},
-  {name: 'lol gh', value:'shows github link to repo'},  
+  {name: 'gh', value:'shows github link to repo'},  
 )
 const Vstaff = new Discord.MessageEmbed()
   .setTitle('Roles')
+  .setColor('#ffB35c')
   .addFields(
-    {name: 'Admin' ,value: 'do "lol admin" to view more info'},
-    {name: 'Mod/moderator', value: 'do "lol mod" to view more info'},
-    {name: 'Developer', value: 'do "lol dev" to view more info'},
-    {name: 'Designer',value: 'do "lol des" to view more info'},
-    {name: 'Video editors',value: 'do "lol Vid" to view more info'},
+    {name: 'Admin' ,value: 'type "lol admin" to view more info'},
+    {name: 'Mod/moderator', value: 'type "lol mod" to view more info'},
+    {name: 'Developer', value: 'type "lol dev" to view more info'},
+    {name: 'Designer',value: 'type "lol des" to view more info'},
+    {name: 'Video editors',value: 'type "lol vid" to view more info'},
   )
-const register = new Discord.MessageEmbed()
-	.setTitle('HOW TO REGISTER')
-	.addFields(
-    {name: 'STEP 1', value: 'type /register in game and the your pin'},
-    {name: 'STEP 2', value: 'type a?register XXXX(your pin) in <#791886317491191818>'},    
-    )
+
 const donate = new Discord.MessageEmbed()
-	.setTitle('DONATE')
-	.setDescription('https://www.paypal.me/alexserver')
+  .setTitle('DONATE')
+  .setColor('#ffB35c')
+	.setDescription('donate on [Paypal](https://www.paypal.me/alexserver)')
 	.addFields(
     {name: 'Q:', value: 'Where will the donations go?'},
 	{name: 'A:', value: 'donations will go to the monthly expenses running the servers'},
@@ -75,20 +74,11 @@ if (message.content.startsWith(prefix + " help")) {
         message.channel.send(Vstaff)
       }else
           
-      if(message.content.startsWith(prefix + ' donate')){
+      if (message.content.startsWith(prefix + ' donate')){
           message.channel.send(donate)
       }else
-          
-      if(message.content.startsWith(prefix + ' register')){
-          message.channel.send(register)
-      }else
-          
-      if(message.content.startsWith(prefix + ' noice')){
-          message.channel.send('noice')
-      }else
       
-      if(message.content.startsWith(prefix + ' gh')){
+      if (message.content.startsWith(prefix + ' gh')){
           message.channel.send('https://github.com/unjown/unjownbot')
-      }
-        return;
+      }else return;
     };

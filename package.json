@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WilloIzCitron/unjownbot.git"
+    "url": "git+https://github.com/unjown/unjownbot.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "unjown",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/WilloIzCitron/unjownbot/issues"
+    "url": "https://github.com/unjown/unjownbot/issues"
   },
-  "homepage": "https://github.com/WilloIzCitron/unjownbot#readme",
+  "homepage": "https://github.com/unjown/unjownbot#readme",
   "dependencies": {
     "discord.js": "^12.5.1"
   }

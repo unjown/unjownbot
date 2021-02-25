@@ -40,6 +40,15 @@ const Vstaff = new Discord.MessageEmbed()
     {name: 'Video editors',value: 'type "lol vid" to view more info'},
   )
 
+const web = new Discord.MessageEmbed()
+  .setTitle('WEBSITE')
+  .setColor('#ffB35c')
+  .addFields(
+    {name: 'Main Website' ,value: '[Click Here](https://alex.servegame.com)'},
+    {name: 'Minecraft', value: '[Click Here](https://alex.servegame.com/minecraft)'},
+    {name: 'Mindustry', value: '[Click Here](https://alex.servegame.com/mindustry)'},
+  )
+
 const donate = new Discord.MessageEmbed()
   .setTitle('DONATE')
   .setColor('#ffB35c')
@@ -80,5 +89,9 @@ if (message.content.startsWith(prefix + " help")) {
       
       if (message.content.startsWith(prefix + ' gh')){
           message.channel.send('https://github.com/unjown/unjownbot')
+      }else
+
+      if (message.content.startsWith(prefix + ' website')){
+          message.channel.send(web)
       }else return;
     };

@@ -27,4 +27,4 @@ client.on('message', egg);
 client.on('message', ohno);
 client.on('message', pog);
 
-client.login(process.env.TOKEN);
+client.login(config.token);

@@ -13,8 +13,10 @@ const register = new Discord.MessageEmbed()
 module.exports = async (message) => { 
     if (message.author.bot) return;
 
-    if(message.content.toLowerCase().includes('how' && 'register')){
-        message.channel.send(register)
-    }
+    if(message.content.toLowerCase().includes('how')){
+        if(message.content.toLowerCase().includes('register')){
+            message.channel.send(register)
+    }else return
+}else return
 
 };

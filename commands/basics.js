@@ -19,16 +19,9 @@ const commands = new Discord.MessageEmbed()
 .setTitle('COMMANDS')
 .setColor('#ffB35c')
 .addFields(
-  {name:'help', value: 'available shows commands'},
-  {name:'commands', value: 'the true help'},
-  {name: 'staff', value: 'gives staff link(google forms)'},
-  {name: 'rules', value:'List all Rules of Alex mindustry'},
-  {name: 'easteregg', value:'list all eastereggs'},
-  {name: 'roles', value: 'list all available staff applications'},
-  {name: 'donate', value: 'pls donate pls'},
-  {name: 'register', value: 'Teaches how to register'},
-  {name: 'gh', value:'shows github link to repo'},  
-)
+  {name:'**GENERAL**', value: '`help`' + ' ' + '`rules`' + ' ' + '`gh(github)`' + ' ' + '`donate`' + ' ' + '`staff`' + ' ' + '`roles`'},
+  {name:'**FAQ**', value: '`register`' + ' ' + '`earn`' + ' ' + '`exp`' + ' ' + '`effects`' + ' ' + '`map`'},
+) 
 const Vstaff = new Discord.MessageEmbed()
   .setTitle('Roles')
   .setColor('#ffB35c')
@@ -36,32 +29,31 @@ const Vstaff = new Discord.MessageEmbed()
     {name: 'Admin' ,value: 'type "lol admin" to view more info'},
     {name: 'Mod/moderator', value: 'type "lol mod" to view more info'},
     {name: 'Developer', value: 'type "lol dev" to view more info'},
-    {name: 'Designer',value: 'type "lol des" to view more info'},
-    {name: 'Video editors',value: 'type "lol vid" to view more info'},
-  )
-
-const web = new Discord.MessageEmbed()
-  .setTitle('WEBSITE')
-  .setColor('#ffB35c')
-  .addFields(
-    {name: 'Main Website' ,value: '[Click Here](https://alex.servegame.com)'},
-    {name: 'Minecraft', value: '[Click Here](https://alex.servegame.com/minecraft)'},
-    {name: 'Mindustry', value: '[Click Here](https://alex.servegame.com/mindustry)'},
   )
 
 const donate = new Discord.MessageEmbed()
   .setTitle('DONATE')
   .setColor('#ffB35c')
-	.setDescription('donate on [Paypal](https://www.paypal.me/alexserver)')
+	.setDescription('donate on [Paypal](https://www.paypal.me/alexservers) or [Patreon](https://www.patreon.com/alexservers) or [buymeacoffee](https://www.buymeacoffee.com/alexservers)')
 	.addFields(
     {name: 'Q:', value: 'Where will the donations go?'},
-	{name: 'A:', value: 'donations will go to the monthly expenses running the servers'},
+	  {name: 'A:', value: 'donations will go to the monthly expenses running the servers'},
+
+    {name: 'Q:', value: 'What do i get for donating to Alex server?'},
+    {name: 'A:', value: '200 <:Ax:789661633214676992> for every $5'},
 )
-    
+ 
+const gh = new Discord.MessageEmbed()
+    .setTitle('Github links')
+    .setColor('#ffB35c')
+    .addFields(
+      {name: 'discord.js', value: 'https://github.com/unjown/unjownbot'},
+      {name: 'discord.py', value: 'https://github.com/alexpvpmindustry/watermelonbot'}
+    )
 module.exports = async (message) => {
     if (message.author.bot) return;
 if (message.content.startsWith(prefix + " help")) {
-        message.channel.send('*Unjownbot is offline* \n lol commands maybe?');
+        message.channel.send(commands);
       } else
     
       if (message.content.startsWith(prefix + ' rules')){
@@ -72,12 +64,8 @@ if (message.content.startsWith(prefix + " help")) {
       }else
 
       if (message.content.startsWith(prefix + ' commands')){
-        message.channel.send(commands)
-      }else
-    
-      if (message.content.startsWith(prefix + ' eastereggs')){
-        message.channel.send('lol nice try')
-      }else
+        message.channel.send('never gonna give you up')
+        }else
       
       if (message.content.startsWith(prefix + ' roles')){
         message.channel.send(Vstaff)
@@ -88,10 +76,6 @@ if (message.content.startsWith(prefix + " help")) {
       }else
       
       if (message.content.startsWith(prefix + ' gh')){
-          message.channel.send('https://github.com/unjown/unjownbot')
-      }else
-
-      if (message.content.startsWith(prefix + ' website')){
-          message.channel.send(web)
+          message.channel.send(gh)
       }else return;
     };

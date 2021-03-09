@@ -34,7 +34,7 @@ const Vstaff = new Discord.MessageEmbed()
 const donate = new Discord.MessageEmbed()
   .setTitle('DONATE')
   .setColor('#ffB35c')
-	.setDescription('donate on [Paypal](https://www.paypal.me/alexserver) or [Patreon](https://www.patreon.com/alexservers) or [buymeacoffee](https://www.buymeacoffee.com/alexservers)')
+	.setDescription('donate on [Paypal](https://www.paypal.me/alexservers) or [Patreon](https://www.patreon.com/alexservers) or [buymeacoffee](https://www.buymeacoffee.com/alexservers)')
 	.addFields(
     {name: 'Q:', value: 'Where will the donations go?'},
 	  {name: 'A:', value: 'donations will go to the monthly expenses running the servers'},

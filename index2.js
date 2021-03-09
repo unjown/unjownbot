@@ -9,7 +9,7 @@ const ping = require('./commands/ping.js')
 const egg = require('./commands/egg.js')
 const pog = require('./commands/pog.js')
 const ohno = require('./commands/ohno.js')
-const music = require('./commands/music.js')
+const auto = require('./commands/auto.js')
 
 const client = new Discord.Client();
 
@@ -17,7 +17,7 @@ client.once('ready', () => {
   console.log('🤖 Beep beep! I am ready!');
 });
 
-client.on('message', music);
+client.on('message', auto)
 client.on('message', commandHandler);
 client.on('message', FAQ);
 client.on('message', roles);

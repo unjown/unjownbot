@@ -58,13 +58,5 @@ module.exports = async (message) => {
     
       if(message.content.startsWith(prefix + ' dev')){
         message.channel.send(dev)
-      }else
-    
-      if(message.content.startsWith(prefix + ' des')){
-        message.channel.send(des)
-      }else
-      
-      if(message.content.startsWith(prefix + ' vid')){
-          message.channel.send(vid)
       }else return;
 };

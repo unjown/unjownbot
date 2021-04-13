@@ -50,6 +50,14 @@ const gh = new Discord.MessageEmbed()
       {name: 'discord.js', value: 'https://github.com/unjown/unjownbot'},
       {name: 'discord.py', value: 'https://github.com/alexpvpmindustry/watermelonbot'}
     )
+
+const community = new Discord.MessageEmbed()
+    .setTitle('Alex Multiverse Commutities')
+    .setColor('#ffB35c')
+    .addFields(
+      {name: 'Discord', value: 'https://discord.gg/KPVVsj2MGW'},
+      {name: 'Reddit', value: 'https://www.reddit.com/r/alexmultiverse/'}
+    )
 module.exports = async (message) => {
     if (message.author.bot) return;
 if (message.content.startsWith(prefix + " help")) {
@@ -77,5 +85,9 @@ if (message.content.startsWith(prefix + " help")) {
       
       if (message.content.startsWith(prefix + ' gh')){
           message.channel.send(gh)
+      }else
+      
+      if (message.content.startsWith(prefix + ' community')){
+          message.channel.send(community)
       }else return;
     };
